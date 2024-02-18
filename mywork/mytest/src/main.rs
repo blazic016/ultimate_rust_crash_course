@@ -1,10 +1,9 @@
 
-use std::fs::File;
-
 fn main() {
-    let res = File::open("foo");
-    match res {
-        Ok(f) => { println!("OK"); },
-        Err(e) => { println!("ERR"); },
+    let num = 5;
+
+    // Iteracija kroz opseg brojeva od 0 do num - 1
+    for i in 0..num {
+        println!("{} Hello", i);
     }
 }
